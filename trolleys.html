@@ -1,4 +1,3 @@
-```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -6,11 +5,34 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Our Trolleys | Jolly Trolley</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+.trolley-photo {
+  height:390px;
+  background:transparent;
+  border:0;
+  border-radius:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  box-shadow:none;
+}
+
+.trolley-photo img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
+
 <a class="brand" href="index.html">
 <img class="logo-image" src="Jolly-Trolley-Logo.png" alt="Jolly Trolley" style="width:105px;height:auto;display:block;">
 </a>
@@ -22,25 +44,34 @@
 <a class="active" href="trolleys.html">Our Trolleys</a>
 <a class="nav-cta" href="contact.html">Contact</a>
 </nav>
+
 </header>
+
 
 <main>
 
 <section class="page-hero">
+
 <p class="eyebrow">OUR TROLLEYS</p>
 
-<h1>Built for the journey.<br><em>Ready for the festival.</em></h1>
+<h1>
+Built for the journey.<br>
+<em>Ready for the festival.</em>
+</h1>
 
 <p class="lead">
 Practical, reliable trolleys designed to make the journey from the car park to the campsite easier for festivalgoers.
 </p>
+
 </section>
+
 
 <section class="trolley-show">
 
-<div class="trolley-photo" style="height:390px;background:var(--yellow);border:2px solid var(--ink);border-radius:28px;display:flex;align-items:center;justify-content:center;overflow:hidden;">
-<img src="AG-Trolley-2.jpg" alt="Jolly Trolley festival trolley" style="width:100%;height:100%;object-fit:contain;display:block;">
+<div class="trolley-photo">
+<img src="AG-Trolley-2.jpg" alt="Jolly Trolley festival trolley">
 </div>
+
 
 <div>
 
@@ -75,6 +106,7 @@ Prepared and checked before deployment to help keep the fleet reliable throughou
 
 </section>
 
+
 <section class="specs">
 
 <div>
@@ -94,6 +126,7 @@ Prepared and checked before deployment to help keep the fleet reliable throughou
 
 </section>
 
+
 <section class="cta-band">
 
 <h2>Planning trolley hire for your festival?</h2>
@@ -107,6 +140,7 @@ We work with festival organisers to provide a reliable trolley operation that fi
 </section>
 
 </main>
+
 
 <footer>
 
@@ -122,11 +156,3 @@ We work with festival organisers to provide a reliable trolley operation that fi
 
 </body>
 </html>
-```
-
-**So just do these two things:**
-
-1. Rename `A&G Trolley 2.jpg` → **`AG-Trolley-2.jpg`** in GitHub.
-2. Replace the entire `trolleys.html` with the code above.
-
-That should fix it.
