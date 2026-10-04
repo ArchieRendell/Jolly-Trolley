@@ -10,14 +10,22 @@
 .trolley-photo {
   height:390px;
   background:transparent;
-  border:0;
-  border-radius:0;
+  border:6px solid var(--ink);
+  border-radius:28px;
   display:flex;
   align-items:center;
   justify-content:center;
   overflow:hidden;
   box-shadow:none;
 }
+
+.trolley-photo img {
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+</style>
 
 .trolley-photo img {
   width:100%;
